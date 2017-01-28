@@ -1,24 +1,12 @@
-# README
+# SearchBox HJ
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+:rocket: Intelligent search made easy
 
-Things you may want to cover:
+Searchkick learns what **your users** are looking for. As more people search, it gets smarter and the results get better. It is friendly and magical for you
 
-* Ruby version
+Searchbox The system requires:
 
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+- Ruby version >= 2.2
+- Rails 5.0.1
+- Postgresql version > 9
+- Elasticsearch 5.0
