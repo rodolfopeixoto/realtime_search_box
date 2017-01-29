@@ -14,4 +14,13 @@ RSpec.configure do |config|
   config.filter_rails_from_backtrace!
   config.include(Shoulda::Matchers::ActiveRecord, type: :model)
   config.include(Shoulda::Matchers::ActiveModel, type: :model)
+
+  Shoulda::Matchers.configure do |config|
+    config.integrate do |with|
+      with.test_framework :rspec
+      with.library :rails
+    end
+  end
+
+  config.mock_with :rspec
 end
