@@ -15,19 +15,21 @@ end
 
 gem 'jbuilder', '~> 2.5'
 gem 'jquery-rails'
+gem 'jquery-turbolinks'
 gem 'puma', '~> 3.0'
 gem 'rails', '~> 5.0.1'
 gem 'sass-rails', '~> 5.0'
 gem 'turbolinks', '~> 5'
+gem 'twitter-bootstrap-rails', git: 'git://github.com/seyhunak/twitter-bootstrap-rails.git'
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 gem 'uglifier', '>= 1.3.0'
 
 gem 'rails_best_practices'
 gem 'rubocop', require: false
 gem 'rubycritic', require: false
-
+gem 'elasticsearch-model'
+gem 'elasticsearch-rails'
 gem 'ffaker'
-gem 'materialize-sass'
 
 
 group :development, :test do
@@ -38,6 +40,8 @@ end
 
 group :test do
   gem 'capybara'
+  gem 'database_cleaner'
+  # gem 'elasticsearch-extensions'
   gem 'factory_girl_rails'
 end
 

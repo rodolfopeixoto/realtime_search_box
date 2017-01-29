@@ -1,4 +1,5 @@
 //= require jquery
 //= require jquery.turbolinks
-//= require materialize
 //= require turbolinks
+//= require typeahead.min
+//= require searches

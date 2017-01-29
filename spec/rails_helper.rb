@@ -4,6 +4,8 @@ abort("The Rails environment is running in production mode!") if Rails.env.produ
 require 'spec_helper'
 require 'rspec/rails'
 require 'shoulda/matchers'
+# require 'rake'
+# require 'elasticsearch/extensions/test/cluster/tasks'
 
 ActiveRecord::Migration.maintain_test_schema!
 
@@ -21,6 +23,20 @@ RSpec.configure do |config|
       with.library :rails
     end
   end
+
+
+  config.before(:suite) do
+    DatabaseCleaner.strategy = :transaction
+    DatabaseCleaner.clean_with(:truncation)
+  end
+
+  config.around(:each) do |example|
+    DatabaseCleaner.cleaning do
+      example.run
+    end
+  end
+
+
 
   config.mock_with :rspec
 end

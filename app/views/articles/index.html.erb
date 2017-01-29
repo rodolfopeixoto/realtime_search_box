@@ -1,0 +1,13 @@
+<div class="container">
+  <h1 class="text-center">Knowledge Base</h1>
+
+  <%= form_tag articles_path(:query), method: :get do %>
+    <%= text_field_tag :query, params[:query], id: "query", class: "form-control" %>
+    <%= submit_tag "Search", name: nil, class: "btn-submit-br btn btn-primary form-control btn-block" %>
+  <% end %>
+
+  <div id="articles">
+    <%= render 'articles' %>
+  </div>
+
+</div>
