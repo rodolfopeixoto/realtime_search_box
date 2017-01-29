@@ -14,3 +14,11 @@ Article.create([
    {title: 'How do I cancel my subscription', content: 'Learn how to view active, expiring, and past subscriptions, change subscription preferences, and cancel subscriptions and memberships.'},
    {title: 'Dramatically Cutting Down Support Requests Within Your SaaS App: The Story of Travis, The Hero From EventGeek', content: 'Ladies and Gentlemen ….. I’d like to introduce to you a hero today. Yes, he might not have saved a kitten from the tree, and may not be chasing down criminals down the tree, but Travis Aaberg is a hero in the customer support field. As EventGeek started to scale up, they decided it was time to introduce a knowledge base into their support process. Travis, a community manager, and hero to us, has set up a process within EventGeek'}
 ])
+
+History.create([
+   { search: "Guide: What Is Knowledge Management", count_search: 1, article: true, ip_user: "127.0.0.0" },
+   { search: "8 Most Common Mistakes to Avoid When Building External Knowledge Base", count_search: 1, article: true, ip_user: "127.0.0.0" },
+   { search: "Cheat Sheet: Cutting Down Customer Support Requests With Knowledge Base", count_search: 1, article: true, ip_user: "127.0.0.0" },
+   { search: "7 Shiny Gold Benefits of Having Internal Knowledge Base", count_search: 1, article: true, ip_user: "127.0.0.0" },
+   { search: "How do I cancel my subscription", count_search: 1, article: true, ip_user: "127.0.0.0" }
+])

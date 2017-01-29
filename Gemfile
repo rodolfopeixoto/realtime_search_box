@@ -13,6 +13,9 @@ git_source(:github) do |repo_name|
   "https://github.com/#{repo_name}.git"
 end
 
+gem 'elasticsearch-model'
+gem 'elasticsearch-rails'
+gem 'ffaker'
 gem 'jbuilder', '~> 2.5'
 gem 'jquery-rails'
 gem 'jquery-turbolinks'
@@ -24,12 +27,10 @@ gem 'twitter-bootstrap-rails', git: 'git://github.com/seyhunak/twitter-bootstrap
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 gem 'uglifier', '>= 1.3.0'
 
+
 gem 'rails_best_practices'
 gem 'rubocop', require: false
 gem 'rubycritic', require: false
-gem 'elasticsearch-model'
-gem 'elasticsearch-rails'
-gem 'ffaker'
 
 
 group :development, :test do

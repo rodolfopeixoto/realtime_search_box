@@ -6,10 +6,8 @@ class SearchesController < ApplicationController
       if params_query.nil?
         []
       else
-        @articles = Article.search(params_query)
-          .results
-          .map { |article| article._source.title }
+        Article.search(params_query).map { |article| article._source.title }
       end
-      render json: @articles
+    render json: @articles
   end
 end

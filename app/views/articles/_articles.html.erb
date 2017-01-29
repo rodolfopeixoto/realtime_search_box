@@ -1,7 +1,18 @@
 <div class="row">
 
-  <div class="col-md-6">
+  <% if @articles.present? %>
 
-  </div>
+    <% @articles.each do |article| %>
+
+      <div class="col-md-6">
+        <h3><%= article.title %></h3>
+        <p><%= article.content %></p>
+      </div>
+
+      <% end %>
+
+  <% else %>
+      <p>Empty database, please add articles</p>
+  <% end %>
 
 </div>
