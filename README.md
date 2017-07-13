@@ -4,6 +4,8 @@
 
 You can view the articles efficiently, and to use the metrics of the search made by the user. The app is fully scalable for the account of the Elasticsearch and Rails and all the infrastructure.
 
+Link: [https://searchboxjuice.herokuapp.com/](https://searchboxjuice.herokuapp.com/)
+
 Searchbox The system requires:
 
 - Ruby version >= 2.2
